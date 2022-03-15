@@ -11,8 +11,8 @@ public:
 	GameCharacter(GameCharacter& copy);
 	void setname(string a);
 	void settools(string tools[3]);
-	//void printcharacter();
 	friend ostream& operator <<(ostream& cout, GameCharacter& player);
+	//Assignment Operator
 	GameCharacter& operator=(GameCharacter& rhs) {
 		cout << "The assignment operator is called" << endl;
 		if (this != &rhs) {

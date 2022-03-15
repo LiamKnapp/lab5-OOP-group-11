@@ -1,5 +1,5 @@
 #include "Header.h"
-
+//Base Constructor.
 GameCharacter ::GameCharacter(){
 	cout << "The default constructor is called" << endl;
 		this->tools = new string[3];
@@ -9,7 +9,7 @@ GameCharacter ::GameCharacter(){
 		tools[1] = "shovel";
 		tools[2] = "gun";
 }
-
+//Parameterized Constructor
 GameCharacter :: GameCharacter(string name, string tool[3]) {
 		cout << "The parameterized constructor is called" << endl;
 		this->name = new string;
@@ -19,7 +19,7 @@ GameCharacter :: GameCharacter(string name, string tool[3]) {
 		
 		
 }
-
+//Copy Constructor
 GameCharacter::GameCharacter(GameCharacter& copy) {
 	cout << "The copy constructor is called" << endl;
 	name = new string;
@@ -29,12 +29,12 @@ GameCharacter::GameCharacter(GameCharacter& copy) {
 	tools[1] = *(copy.tools + 1);
 	tools[2] = *(copy.tools + 2);
 }
-
+//Changes the characters name
 void GameCharacter :: setname(string a){
 	*name = a;
 	cout << "Character name Successfully Changed" << endl;
 }
-
+//Changes the characters tools
 void GameCharacter :: settools(string b[3]) {
 	tools[0] = b[0];
 	tools[1] = b[1];
@@ -44,12 +44,8 @@ void GameCharacter :: settools(string b[3]) {
 
 }
 
-/*void GameCharacter::printcharacter() {
 
-		
-
-}*/
-
+//Overloading to allowing printing of object.
 ostream& operator <<(ostream& cout, GameCharacter& player) {
 
 	cout << "character name: " << *player.name << "" << endl;
