@@ -32,21 +32,23 @@ GameCharacter::GameCharacter(GameCharacter& copy) {
 }
 
 void GameCharacter :: setname(string a){
-		*name = a;
+	*name = a;
+	cout << "Character name Successfully Changed" << endl;
 }
 
 void GameCharacter :: settools(string b[3]) {
 	tools[0] = b[0];
 	tools[1] = b[1];
 	tools[2] = b[2];
+	cout << "Tools Successfully Changed" << endl;
 
 
 }
 
 void GameCharacter :: printcharacter() {
 
-		cout << *name << endl;
-		cout <<  tools[0] <<"," << tools[1] <<","<< tools[2] << endl;
+		cout <<"character name: "<< *name <<""<< endl;
+		cout <<"tools: " << tools[0] << "," << tools[1] << "," << tools[2] << endl;
 
 }
 
