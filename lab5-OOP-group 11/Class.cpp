@@ -11,18 +11,17 @@ GameCharacter ::GameCharacter(){
 }
 
 GameCharacter :: GameCharacter(string name, string tool[3]) {
-
+		cout << "The parameterized constructor is called" << endl;
 		this->name = new string;
 		this->tools = new string[3];
 		*this->name = name;
 		this->tools = tool;
 		
-		cout << "The parameterized constructor is called" << endl;
+		
 }
 
 GameCharacter::GameCharacter(GameCharacter& copy) {
 	cout << "The copy constructor is called" << endl;
-	//string toolnames = *(copy.tools +1);
 	name = new string;
 	tools = new string[3]; 
 	*name = *copy.name;
@@ -51,9 +50,13 @@ void GameCharacter :: settools(string b[3]) {
 
 }*/
 
-ostream& operator <<(ostream& cout, GameCharacter player) {
+ostream& operator <<(ostream& cout, GameCharacter& player) {
 
 	cout << "character name: " << *player.name << "" << endl;
 	cout << "tools: " << player.tools[0] << "," << player.tools[1] << "," << player.tools[2] << endl;
 	return cout;
 }
+
+
+
+

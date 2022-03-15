@@ -12,5 +12,12 @@ public:
 	void setname(string a);
 	void settools(string tools[3]);
 	//void printcharacter();
-	friend ostream& operator <<(ostream& cout, GameCharacter player);
+	friend ostream& operator <<(ostream& cout, GameCharacter& player);
+	GameCharacter& operator=(GameCharacter& rhs) {
+		cout << "The assignment operator is called" << endl;
+		if (this != &rhs) {
+			*name = *(rhs.name);
+			*tools = *(rhs.tools);
+		}
+	}
 };
