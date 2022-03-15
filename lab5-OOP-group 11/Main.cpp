@@ -8,11 +8,14 @@ int main() {
 	string toolset1[3] = { "raygun", "excalibur", "watering can" };
 	string toolset2[3] = { "bomb", "knife", "rifle" };
 	GameCharacter p1(name, toolset1); 
+	/*
 	cout << "character 1" << endl;
 	//This prints character 1.
 	cout << p1 << endl;
 	cout << endl;
+	*/
 	GameCharacter p2 = p1; 
+	/*
 	cout << endl;
 	cout << "character 2" << endl;
 	//This prints character 2.
@@ -28,14 +31,18 @@ int main() {
 	cout << "character 2" << endl;
 	cout << p2 << endl;
 	cout << endl;
-	GameCharacter p3;
-	cout << "character 3" << endl;
-	//This prints character 3.
-	cout << p3 << endl;
+	
 
-	//testing the assignment operator
+	//testing the assignment operator.
+	*/
 	p1 = p2; 
+	/*
+	cout << "character 1" << endl;
 	cout << p1 << endl;
-
+	*/
+	foo1(p1); 
+	foo2(p1);
+	foo3(p1);
+	foo4(p1);
 	return 0;
 }

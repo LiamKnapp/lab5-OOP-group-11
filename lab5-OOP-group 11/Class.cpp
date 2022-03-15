@@ -53,6 +53,21 @@ ostream& operator <<(ostream& cout, GameCharacter& player) {
 	return cout;
 }
 
+GameCharacter foo1(GameCharacter p) {
+	return p;
+}
+
+GameCharacter& foo2(GameCharacter& p) {
+	return p;
+}
+GameCharacter foo3(GameCharacter& p) {
+	return p;
+}
+
+ GameCharacter& foo4(GameCharacter p) {
+	return p;
+}
+
 
 
 
