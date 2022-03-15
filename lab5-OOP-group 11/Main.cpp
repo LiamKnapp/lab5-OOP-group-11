@@ -33,8 +33,9 @@ int main() {
 	//This prints character 3.
 	cout << p3 << endl;
 
-
-
+	//testing the assignment operator
+	p1 = p2; 
+	cout << p1 << endl;
 
 	return 0;
 }

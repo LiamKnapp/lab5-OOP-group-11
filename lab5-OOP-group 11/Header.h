@@ -19,5 +19,6 @@ public:
 			*name = *(rhs.name);
 			*tools = *(rhs.tools);
 		}
+		return *this;
 	}
 };
