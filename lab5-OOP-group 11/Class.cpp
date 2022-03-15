@@ -1,13 +1,13 @@
 #include "Header.h"
 
 GameCharacter ::GameCharacter(){
+	cout << "The default constructor is called" << endl;
 		this->tools = new string[3];
 		this->name = new string;
 		*name = "Mario";
 		tools[0] = "axe";
 		tools[1] = "shovel";
 		tools[2] = "gun";
-		cout << "The default constructor is called" << endl;
 }
 
 GameCharacter :: GameCharacter(string name, string tool[3]) {

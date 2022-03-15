@@ -24,6 +24,9 @@ int main() {
 	cout << endl;
 	cout << "character 2" << endl;
 	p2.printcharacter();
-
+	cout << endl;
+	GameCharacter p3;
+	cout << "character 3" << endl;
+	p3.printcharacter();
 	return 0;
 }
