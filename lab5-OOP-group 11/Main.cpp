@@ -9,24 +9,26 @@ int main() {
 	string toolset2[3] = { "bomb", "knife", "rifle" };
 	GameCharacter p1(name, toolset1); 
 	cout << "character 1" << endl;
-	p1.printcharacter();
+	cout << p1 << endl;
 	cout << endl;
 	GameCharacter p2 = p1; 
 	cout << endl;
 	cout << "character 2" << endl;
-	p2.printcharacter(); 
+	cout << p2 << endl;
 	cout << endl;
 	string Fox = "Fox McCloud";
 	p1.setname(Fox);; 
 	p1.settools(toolset2);
 	cout << "character 1" << endl;
-	p1.printcharacter();
+	cout << p1 << endl;
 	cout << endl;
 	cout << "character 2" << endl;
-	p2.printcharacter();
+	cout << p2 << endl;
 	cout << endl;
 	GameCharacter p3;
 	cout << "character 3" << endl;
-	p3.printcharacter();
+	cout << p3 << endl;
+
+
 	return 0;
 }

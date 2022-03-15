@@ -45,10 +45,15 @@ void GameCharacter :: settools(string b[3]) {
 
 }
 
-void GameCharacter :: printcharacter() {
+/*void GameCharacter::printcharacter() {
 
-		cout <<"character name: "<< *name <<""<< endl;
-		cout <<"tools: " << tools[0] << "," << tools[1] << "," << tools[2] << endl;
+		
 
+}*/
+
+ostream& operator <<(ostream& cout, GameCharacter player) {
+
+	cout << "character name: " << *player.name << "" << endl;
+	cout << "tools: " << player.tools[0] << "," << player.tools[1] << "," << player.tools[2] << endl;
+	return cout;
 }
-

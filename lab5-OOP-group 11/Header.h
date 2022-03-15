@@ -11,5 +11,6 @@ public:
 	GameCharacter(GameCharacter& copy);
 	void setname(string a);
 	void settools(string tools[3]);
-	void printcharacter();
+	//void printcharacter();
+	friend ostream& operator <<(ostream& cout, GameCharacter player);
 };
